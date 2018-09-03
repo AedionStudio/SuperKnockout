@@ -4,8 +4,8 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef SCENEFUSION_sfLockComponent_generated_h
@@ -13,29 +13,27 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SCENEFUSION_sfLockComponent_generated_h
 
-#define HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_RPC_WRAPPERS
-#define HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS
-#define HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_INCLASS_NO_PURE_DECLS \
+#define SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_RPC_WRAPPERS
+#define SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUsfLockComponent(); \
-	friend SCENEFUSION_API class UClass* Z_Construct_UClass_UsfLockComponent(); \
+	friend struct Z_Construct_UClass_UsfLockComponent_Statics; \
 public: \
-	DECLARE_CLASS(UsfLockComponent, USceneComponent, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/SceneFusion"), NO_API) \
-	DECLARE_SERIALIZER(UsfLockComponent) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(UsfLockComponent, USceneComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SceneFusion"), NO_API) \
+	DECLARE_SERIALIZER(UsfLockComponent)
 
 
-#define HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_INCLASS \
+#define SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesUsfLockComponent(); \
-	friend SCENEFUSION_API class UClass* Z_Construct_UClass_UsfLockComponent(); \
+	friend struct Z_Construct_UClass_UsfLockComponent_Statics; \
 public: \
-	DECLARE_CLASS(UsfLockComponent, USceneComponent, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/SceneFusion"), NO_API) \
-	DECLARE_SERIALIZER(UsfLockComponent) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(UsfLockComponent, USceneComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SceneFusion"), NO_API) \
+	DECLARE_SERIALIZER(UsfLockComponent)
 
 
-#define HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_STANDARD_CONSTRUCTORS \
+#define SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UsfLockComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UsfLockComponent) \
@@ -48,7 +46,7 @@ private: \
 public:
 
 
-#define HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_ENHANCED_CONSTRUCTORS \
+#define SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UsfLockComponent(UsfLockComponent&&); \
@@ -59,32 +57,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UsfLockComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UsfLockComponent)
 
 
-#define HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_PRIVATE_PROPERTY_OFFSET
-#define HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_13_PROLOG
-#define HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_GENERATED_BODY_LEGACY \
+#define SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_PRIVATE_PROPERTY_OFFSET
+#define SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_13_PROLOG
+#define SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_PRIVATE_PROPERTY_OFFSET \
-	HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_RPC_WRAPPERS \
-	HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_INCLASS \
-	HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_STANDARD_CONSTRUCTORS \
+	SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_PRIVATE_PROPERTY_OFFSET \
+	SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_RPC_WRAPPERS \
+	SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_INCLASS \
+	SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_GENERATED_BODY \
+#define SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_PRIVATE_PROPERTY_OFFSET \
-	HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_INCLASS_NO_PURE_DECLS \
-	HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_ENHANCED_CONSTRUCTORS \
+	SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_PRIVATE_PROPERTY_OFFSET \
+	SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_INCLASS_NO_PURE_DECLS \
+	SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID HostProject_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h
+#define CURRENT_FILE_ID SuperKnockout_Plugins_SceneFusion_Source_SceneFusion_Private_Components_sfLockComponent_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
