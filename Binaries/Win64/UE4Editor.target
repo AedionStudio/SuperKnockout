@@ -24,6 +24,14 @@
 			"Type": "Executable"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/SceneFusion/Binaries/Win64/UE4Editor-SceneFusion.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SceneFusion/Binaries/Win64/UE4Editor-SceneFusion.pdb",
+			"Type": "SymbolFile"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/AdvancedSessions/AdvancedSessions/Binaries/Win64/UE4Editor-AdvancedSessions.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -54,14 +62,6 @@
 		{
 			"Path": "$(EngineDir)/Plugins/Online/OnlineSubsystemSteam/Binaries/Win64/UE4Editor-OnlineSubsystemSteam.dll",
 			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SceneFusion/Binaries/Win64/UE4Editor-SceneFusion.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SceneFusion/Binaries/Win64/UE4Editor-SceneFusion.pdb",
-			"Type": "SymbolFile"
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll",
@@ -1648,22 +1648,6 @@
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(EngineDir)/Binaries/Win64/Linux/UE4Editor-LinuxTargetPlatform.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Binaries/Win64/Linux/UE4Editor-LinuxNoEditorTargetPlatform.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Binaries/Win64/Linux/UE4Editor-LinuxClientTargetPlatform.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Binaries/Win64/Linux/UE4Editor-LinuxServerTargetPlatform.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
 			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-Engine.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -1748,6 +1732,10 @@
 			"Type": "BuildResource"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/SceneFusion/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/AdvancedSessions/AdvancedSessions/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -1765,10 +1753,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Online/OnlineSubsystemSteam/Binaries/Win64/UE4Editor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SceneFusion/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -2046,15 +2030,15 @@
 		{
 			"Path": "$(EngineDir)/Binaries/Win64/Lumin/UE4Editor.modules",
 			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(EngineDir)/Binaries/Win64/Linux/UE4Editor.modules",
-			"Type": "RequiredResource"
 		}
 	],
 	"RuntimeDependencies": [
 		{
 			"Path": "$(ProjectDir)/SuperKnockout.uproject",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SceneFusion/SceneFusion.uplugin",
 			"Type": "UFS"
 		},
 		{
@@ -2075,10 +2059,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Online/OnlineSubsystemSteam/OnlineSubsystemSteam.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SceneFusion/SceneFusion.uplugin",
 			"Type": "UFS"
 		},
 		{
@@ -4729,10 +4709,6 @@
 		"$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/Layers/UE4Editor-Layers.lib",
 		"$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/LevelEditor/UE4Editor-LevelEditor.lib",
 		"$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/LevelSequence/UE4Editor-LevelSequence.lib",
-		"$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/Linux/LinuxClientTargetPlatform/UE4Editor-LinuxClientTargetPlatform.lib",
-		"$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/Linux/LinuxNoEditorTargetPlatform/UE4Editor-LinuxNoEditorTargetPlatform.lib",
-		"$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/Linux/LinuxServerTargetPlatform/UE4Editor-LinuxServerTargetPlatform.lib",
-		"$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/Linux/LinuxTargetPlatform/UE4Editor-LinuxTargetPlatform.lib",
 		"$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/Localization/UE4Editor-Localization.lib",
 		"$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/LocalizationCommandletExecution/UE4Editor-LocalizationCommandletExecution.lib",
 		"$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/LocalizationDashboard/UE4Editor-LocalizationDashboard.lib",
@@ -9616,10 +9592,6 @@
 		"$(EngineDir)/Source/Developer/IOS/IOSTargetPlatform/IOSTargetPlatform.Build.cs",
 		"$(EngineDir)/Source/Developer/IOS/TVOSTargetPlatform/TVOSTargetPlatform.Build.cs",
 		"$(EngineDir)/Source/Developer/LauncherServices/LauncherServices.Build.cs",
-		"$(EngineDir)/Source/Developer/Linux/LinuxClientTargetPlatform/LinuxClientTargetPlatform.Build.cs",
-		"$(EngineDir)/Source/Developer/Linux/LinuxNoEditorTargetPlatform/LinuxNoEditorTargetPlatform.Build.cs",
-		"$(EngineDir)/Source/Developer/Linux/LinuxServerTargetPlatform/LinuxServerTargetPlatform.Build.cs",
-		"$(EngineDir)/Source/Developer/Linux/LinuxTargetPlatform/LinuxTargetPlatform.Build.cs",
 		"$(EngineDir)/Source/Developer/Localization/Localization.Build.cs",
 		"$(EngineDir)/Source/Developer/LocalizationService/LocalizationService.Build.cs",
 		"$(EngineDir)/Source/Developer/LogVisualizer/LogVisualizer.Build.cs",
