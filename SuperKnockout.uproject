@@ -1,13 +1,9 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.20",
+	"EngineAssociation": "4.22",
 	"Category": "",
 	"Description": "",
 	"Plugins": [
-		{
-			"Name": "SceneFusion",
-			"Enabled": true
-		},
 		{
 			"Name": "SmoothSyncPlugin",
 			"Enabled": false,
